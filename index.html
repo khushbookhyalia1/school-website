@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bright Future School — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="logo" class="logo">Bright Future School</a>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO with CTA and stats -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <h1>Unlocking potential — learning with heart & mind</h1>
+        <p class="lead">Bright Future School (1–12) — balanced academics, sports & character development. Enroll for the new session now.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#admission" id="openAdmission">Apply Now</a>
+          <a class="btn ghost" href="about.html">Know More</a>
+        </div>
+
+        <ul class="quick-stats">
+          <li><strong id="counter-students">0</strong><span>Students</span></li>
+          <li><strong id="counter-teachers">0</strong><span>Teachers</span></li>
+          <li><strong id="counter-years">0</strong><span>Years</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card principal-card">
+          <img src="principal.jpg" alt="Principal" class="avatar">
+          <h3>Principal's Message</h3>
+          <p>Welcome! We nurture curiosity and integrity. Our community is supportive and focused on every child's growth.</p>
+          <a href="about.html" class="small-link">Read more →</a>
+        </div>
+
+        <div class="announcements card">
+          <h4>Announcements</h4>
+          <ul>
+            <li>Annual Day: <strong>Dec 20, 2025</strong> — rehearsal schedule published</li>
+            <li>Computer Lab: New weekly practicals from Jan 2026</li>
+            <li>Admissions open for Grades 1–9</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Why choose -->
+  <section class="wrap features-section">
+    <h2>Why parents choose Bright Future</h2>
+    <div class="card-grid features">
+      <article class="card feature">
+        <div class="icon">📚</div>
+        <h3>Academic Excellence</h3>
+        <p>Structured curriculum, small class sizes, regular assessments and remedial support.</p>
+      </article>
+
+      <article class="card feature">
+        <div class="icon">🔬</div>
+        <h3>Labs & Library</h3>
+        <p>Modern science labs, computer lab and a resource-rich library for reading & projects.</p>
+      </article>
+
+      <article class="card feature">
+        <div class="icon">⚽</div>
+        <h3>Sports & Clubs</h3>
+        <p>Multiple sports, music and arts clubs; regular inter-house competitions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- slider / programs -->
+  <section class="wrap programs">
+    <h2>Programs & Curriculum</h2>
+    <div class="slider" id="programSlider">
+      <div class="slide">
+        <h3>Primary (1–5)</h3>
+        <p>Foundational literacy & numeracy, creative learning and life skills.</p>
+      </div>
+      <div class="slide">
+        <h3>Upper Primary (6–8)</h3>
+        <p>Exploratory science, mathematics strengthening and digital literacy.</p>
+      </div>
+      <div class="slide">
+        <h3>Senior School (9–12)</h3>
+        <p>Stream options (Science/Commerce/Arts), exam preparation and projects.</p>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button id="prevSlide" class="ctrl">‹</button>
+      <button id="nextSlide" class="ctrl">›</button>
+    </div>
+  </section>
+
+  <!-- Quick links -->
+  <section class="wrap quick-links">
+    <h2>Quick Links</h2>
+    <div class="card-grid">
+      <a class="card link-card" href="academics.html">Academics</a>
+      <a class="card link-card" href="facilities.html">Facilities</a>
+      <a class="card link-card" href="activities.html">Activities</a>
+      <a class="card link-card" href="gallery.html">Gallery</a>
+    </div>
+  </section>
+
+  <!-- Admission modal anchor -->
+  <section class="wrap" id="admission">
+    <h2>Admission form</h2>
+    <div class="card admission-card">
+      <p>Fill the short admission enquiry — our admissions team will contact you.</p>
+      <form id="admissionForm" class="form-grid" novalidate>
+        <label>
+          Parent name
+          <input type="text" name="parentName" required>
+        </label>
+        <label>
+          Child name
+          <input type="text" name="childName" required>
+        </label>
+        <label>
+          Grade applying for
+          <select name="grade" required>
+            <option value="">Select grade</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </label>
+        <label>
+          Contact phone
+          <input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="10 digits">
+        </label>
+        <label class="full">
+          Message (optional)
+          <textarea name="message" rows="3"></textarea>
+        </label>
+        <div class="form-actions full">
+          <button type="submit" class="btn primary">Submit</button>
+          <button type="button" id="resetForm" class="btn ghost">Reset</button>
+        </div>
+      </form>
+      <div id="formMsg" class="form-msg" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Bright Future School</h4>
+      <p>123 School Road, Your City — Phone: 01234-567890 — Email: info@brightfuture.edu</p>
+    </div>
+    <div>
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <p>Social links (placeholders)</p>
+    </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Bright Future School</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
