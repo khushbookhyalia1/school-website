@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Bright Future School</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-gallery">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="logo" class="logo">Bright Future School</a>
+    <button id="navToggle6" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav6" class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <h1>Gallery</h1>
+    <p class="lead">A snapshot of school life — events, labs, sports and more.</p>
+
+    <div class="gallery" id="galleryGrid">
+      <img src="gallery1.jpg" alt="Gallery 1" class="gallery-item">
+      <img src="gallery2.jpg" alt="Gallery 2" class="gallery-item">
+      <img src="gallery3.jpg" alt="Gallery 3" class="gallery-item">
+      <img src="gallery4.jpg" alt="Gallery 4" class="gallery-item">
+      <img src="gallery5.jpg" alt="Gallery 5" class="gallery-item">
+      <img src="gallery6.jpg" alt="Gallery 6" class="gallery-item">
+    </div>
+
+    <!-- modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <button id="modalClose" class="modal-close" aria-label="Close image">✕</button>
+      <img id="modalImg" src="" alt="Large image">
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><h4>Gallery</h4></div>
+    <div><h4>Contact</h4></div>
+    <div><h4>Address</h4></div>
+  </div>
+  <div class="copyright">© <span id="year6"></span> Bright Future School</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
